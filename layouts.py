@@ -177,7 +177,7 @@ layout1 = html.Div([
                 clearable=False   
             ),
             html.Iframe(id='map',#graficamos el mapa como un Iframe
-            srcDoc=open('assets/prueba_por_municipios.html','r').read(),width='90%',height='400')
+            srcDoc=open('static/prueba_por_municipios.html','r').read(),width='90%',height='400')
                 ],className = 'four columns'),
         ], className = 'row')
 

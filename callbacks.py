@@ -420,7 +420,7 @@ def mapping_df(full_ser,prueba):
                 fill=True,
                 fill_color='crimson'
             ).add_to(m)
-    folium_hmap.save('assets/prueba_por_municipios.html')
+    folium_hmap.save('static/prueba_por_municipios.html')
 
     return folium_hmap
 
@@ -481,7 +481,7 @@ def generate_map(prueba):
         mapping_df(mun_to_coord(df_ser),prueba)
     else:
         mapping_df(mun_to_coord(df_pcr),prueba)
-    return open('assets/prueba_por_municipios.html','r').read()
+    return open('static/prueba_por_municipios.html','r').read()
 
 #Donut chart:
 @app.callback(
